@@ -8,8 +8,18 @@
   </head>
   <body>
     <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <div class="control-panel">
+      <div class="controls zoom-control">
+        <button class="zoom-control-in" title="Zoom In">+</button>
+        <button class="zoom-control-out" title="Zoom Out">−</button>
+      </div>
+      <div class="controls pan-control">
+        <button class="pan-control-north" title="Pan North">&uarr;</button>
+        <button class="pan-control-south" title="Pan South">&darr;</button>
+        <button class="pan-control-west" title="Pan West">&larr;</button>
+        <button class="pan-control-east" title="Pan East">&rarr;</button>
+      </div>
+    </div>
     <script
       src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
       async

@@ -1,13 +1,84 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
 #map {
   height: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. */
 html,
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+}
+
+.control-panel {
+  height: 8vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.controls {
+  font-size: 28px; /* this adjusts the size of all the controls */
+  font-weight: 300;
+  margin: 3px;
+  text-align: center;
+  user-select: none;
+  padding: 2px;
+}
+
+.controls button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  height: 6vh;
+  color: white;
+  width: 6vh;
+}
+
+.controls button:active {
+  box-shadow: none;
+}
+
+.controls.zoom-control {
+  height: auto;
+}
+.controls.zoom-control button {
+  font: 0.85em Arial;
+  margin: 0px;
+  padding: 0;
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3c93d5;
+}
+
+.controls.pan-control {
+  height: auto;
+}
+
+.controls.pan-control button {
+  font: 0.85em Arial;
+  margin: 0px;
+  background-color: #b6b6b6;
+  box-shadow: 0px 5px 0px 0px #8a8a8a;
+}
+
+.controls .pan-control-west {
+  background-color: lightsteelblue;
+}
+
+.controls .buttonHere {
+  font: 0.85em Arial;
+  margin: 0px;
+  background-color: #95e999;
+  box-shadow: 0px 5px 0px 0px #269c2b;
+  font-size: 10px;
+}
+
+.controls.location button {
+  font: 0.85em Arial;
+  margin: 0px;
+  background-color: #e091d6;
+  box-shadow: 0px 5px 0px 0px #d14fc0;
+  font-size: 10px;
 }
