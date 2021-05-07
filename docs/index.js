@@ -26,10 +26,15 @@ function initPanControl(map) {
 }
 
 function setLocation(map) {
-  document.querySelector("mahalo").onclick = function () {
+  document.querySelector(".systrarna").onclick = function () {
     var pos = { lat: 59.3423168, lng: 18.0342352 };
     console.log("clicking this button");
-    map.setCenter(59.3423168, 18.0342352, 16);
+    map.setCenter(pos);
+  };
+  document.querySelector(".nike").onclick = function () {
+    var pos = { lat: 59.234238, lng: 18.2231558 };
+    console.log("clicking this button");
+    map.setCenter(pos);
   };
 }
 
@@ -44,6 +49,7 @@ function initMap() {
   map.setTilt(45);
   initZoomControl(map);
   initPanControl(map);
+  setLocation(map);
 
   marker_drag = new google.maps.Marker({
     map,
