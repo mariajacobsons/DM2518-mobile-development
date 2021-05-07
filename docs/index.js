@@ -32,6 +32,7 @@ function initMap() {
     mapTypeId: "satellite",
     disableDefaultUI: true,
   });
+  document.getElementById("map").style.display = "none";
   map.setTilt(45);
   initZoomControl(map);
   initPanControl(map);
@@ -56,5 +57,15 @@ function toggleBounce() {
     marker.setAnimation(null);
   } else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+function showOrHideDiv() {
+  var v = document.getElementById("homepage");
+  if (v.style.display === "none") {
+    v.style.display = "block";
+  } else {
+    v.style.display = "none";
+    document.getElementById("map").style.display = "block";
   }
 }

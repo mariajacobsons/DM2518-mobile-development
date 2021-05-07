@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-.control-panel {
+#control-panel {
   height: 8vh;
   display: flex;
   flex-flow: row wrap;
@@ -81,4 +81,14 @@ body {
   background-color: #e091d6;
   box-shadow: 0px 5px 0px 0px #d14fc0;
   font-size: 10px;
+}
+
+#homepage {
+  height: 100%;
+  width: 100%;
+  line-height: 500px;
+  background-color: #568259;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  text-align: center;
 }
