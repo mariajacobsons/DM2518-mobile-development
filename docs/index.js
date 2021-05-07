@@ -57,6 +57,7 @@ function initMap() {
     draggable: true,
     animation: google.maps.Animation.DROP,
     position: { lat: 59.3498092, lng: 18.0684758 },
+    icon: { url: "./bluemarker.png", height: 5 },
   });
   marker = new google.maps.Marker({
     map,
