@@ -16,6 +16,13 @@
   <body>
     <div id="map"></div>
     <div class="control-panel">
+      <button id="goFS">Go fullscreen</button>
+        <script>
+          var goFS = document.getElementById("goFS");
+          goFS.addEventListener("click", function() {
+             document.body.requestFullscreen();
+          }, false);
+        </script>
       <div class="controls zoom-control">
         <button class="zoom-control-in" title="Zoom In">+</button>
         <button class="zoom-control-out" title="Zoom Out">−</button>
