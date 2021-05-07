@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-#control-panel {
+.control-panel {
   height: 8vh;
   display: flex;
   flex-flow: row wrap;
@@ -91,4 +91,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }

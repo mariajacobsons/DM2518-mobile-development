@@ -2,24 +2,27 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Nike & Marias Karta" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Nike & Marias Karta</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="icon" href="./earth-icon.png">
-    <link
-			rel="apple-touch-icon"
-			sizes="128x128"
-			href="./earth-icon.png"
-    />
+    <link rel="icon" href="./earth-icon.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="./earth-icon.png" />
     <script src="./index.js"></script>
   </head>
   <body>
-    <div id="homepage" onclick="showOrHideDiv()">Välkommen till kartan!</div>
+    <div
+      id="homepage"
+      onclick="showOrHideDiv();
+      const element = document.getElementsByClassName('control-panel hidden')[0];
+      element.classList.remove('hidden');"
+    >
+      Välkommen till kartan!
+    </div>
     <div id="map"></div>
-    <div class="control-panel">
+    <div class="control-panel hidden">
       <div class="controls zoom-control">
         <button class="zoom-control-in" title="Zoom In">+</button>
         <button class="zoom-control-out" title="Zoom Out">−</button>
