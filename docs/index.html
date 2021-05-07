@@ -19,7 +19,8 @@
       const element = document.getElementsByClassName('control-panel hidden')[0];
       element.classList.remove('hidden');"
     >
-      Välkommen till kartan!
+      Välkommen till kartan!<br />
+      Klicka på sidan för att komma igång
     </div>
     <div id="map"></div>
     <div class="control-panel hidden">
@@ -34,8 +35,8 @@
         <button class="pan-control-east" title="Pan East">&rarr;</button>
       </div>
       <div class="controls location">
-				<button class="mahalo" title="Systrarna Andersson">Sys</button>
-			</div>
+        <button class="sys" title="Systrarna Andersson">Sys</button>
+      </div>
     </div>
     <script
       src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"

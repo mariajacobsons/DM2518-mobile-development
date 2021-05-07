@@ -26,10 +26,10 @@ function initPanControl(map) {
 }
 
 function setLocation(map) {
-  document.querySelector("mahalo").onclick = function () {
+  document.querySelector(".sys").onclick = function () {
     var pos = { lat: 59.3423168, lng: 18.0342352 };
     console.log("clicking this button");
-    map.setCenter(59.3423168, 18.0342352, 16);
+    map.setCenter(pos, 16);
   };
 }
 
@@ -66,11 +66,11 @@ function initMap() {
     position: { lat: 59.3423168, lng: 18.0342352 },
   });
   var systrarnaAnderssonWindow = new google.maps.InfoWindow({
-    content: "Systrarna Andersson: Ett trevligt café i Hagastan"
+    content: "Systrarna Andersson: Ett trevligt café i Hagastan",
   });
-  systrarnaAnderssonMarker.addListener('click', function() {
+  systrarnaAnderssonMarker.addListener("click", function () {
     systrarnaAnderssonWindow.open(map, systrarnaAnderssonMarker);
-    });
+  });
 
   nikesApartmentMarker = new google.maps.Marker({
     map,
@@ -79,11 +79,11 @@ function initMap() {
     position: { lat: 59.234238, lng: 18.2231558 },
   });
   var nikesApartmentWindow = new google.maps.InfoWindow({
-    content: "Nikes Lägenhet"
+    content: "Nikes Lägenhet",
   });
-  nikesApartmentMarker.addListener('click', function() {
+  nikesApartmentMarker.addListener("click", function () {
     nikesApartmentWindow.open(map, nikesApartmentMarker);
-    });
+  });
 }
 
 function toggleBounce() {
