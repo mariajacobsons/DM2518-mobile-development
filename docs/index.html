@@ -13,9 +13,16 @@
     <script src="./index.js"></script>
   </head>
   <body>
-    <div id="homepage" onclick="showOrHideDiv()">Välkommen till kartan!</div>
+    <div
+      id="homepage"
+      onclick="showOrHideDiv();
+      const element = document.getElementsByClassName('control-panel hidden')[0];
+      element.classList.remove('hidden');"
+    >
+      Välkommen till kartan!
+    </div>
     <div id="map"></div>
-    <div id="control-panel">
+    <div class="control-panel hidden">
       <div class="controls zoom-control">
         <button class="zoom-control-in" title="Zoom In">+</button>
         <button class="zoom-control-out" title="Zoom Out">−</button>
