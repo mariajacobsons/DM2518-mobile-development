@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-title" content="Nike & Marias Karta" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Nike & Marias Karta</title>
-    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="icon" href="./earth-icon.png">
     <link
@@ -20,13 +20,6 @@
     <div id="homepage" onclick="showOrHideDiv()">Välkommen till kartan!</div>
     <div id="map"></div>
     <div class="control-panel">
-      <button id="goFS">Go fullscreen</button>
-        <script>
-          var goFS = document.getElementById("goFS");
-          goFS.addEventListener("click", function() {
-             document.body.requestFullscreen();
-          }, false);
-        </script>
       <div class="controls zoom-control">
         <button class="zoom-control-in" title="Zoom In">+</button>
         <button class="zoom-control-out" title="Zoom Out">−</button>
